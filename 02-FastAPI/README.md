@@ -214,13 +214,7 @@ Request: `/items/2?q=books`
 
 ## 📄 Optional: `requirements.txt`
 
-To share project dependencies, generate a `requirements.txt` file:
-
-```bash
-pip freeze > requirements.txt
-```
-
-Others can install them with:
+you can install the required dependencies with the command below:
 
 ```bash
 pip install -r requirements.txt
