@@ -40,3 +40,5 @@ def path_query(item_id: int, q: Union[str,None] = None):
 @app.put("/items/{item_id}")
 def modify(item_id: int, item: ItemType):
     return {"item_name": item.name, "item_id": item_id, "item_price":item.price, "is_offer":item.is_offer}
+
+
