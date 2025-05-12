@@ -40,7 +40,6 @@ def get_users(user_id:int):
 def create_task(user_id:int, task:Create_Task):
     if user_id not in USERS:
         raise HTTPException(status_code=404,detail=f"User id {user_id} not found in Memory")
-    
     global task_id
     new_task=Task(task_id=task_id,user_id=user_id, **task.model_dump())
     TASKS[user_id]=new_task
@@ -58,7 +57,7 @@ def get_tasks(task_id:int):
 # PUT /tasks/{task_id} – update status only, validating allowed values. 
 @app.put("/tasks/{task_id}")
 def update_status(task_id:int,status:str):
-    if status not in {"Pending", "Completed", "In Progress"}:
+    if status.lower() not in {"pending", "cmpleted", "in progress"}:
         raise HTTPException(status_code=400, detail=f"'{status}' is not valid Status")
     task =TASKS.get(task_id)
     if not task:
