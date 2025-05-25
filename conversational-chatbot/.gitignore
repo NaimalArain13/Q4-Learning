@@ -1,16 +1,11 @@
-# Ignore environment variables
-.env
-
-# Ignore compiled Python files
+# Python-generated files
 __pycache__/
-*.py[cod]
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
 
-# Ignore VSCode settings (optional)
-.vscode/
-
-# Ignore virtual environments (optional)
-venv/
-env/
-
-# Ignore system files
-.DS_Store
+# Virtual environments
+.venv
+.env
