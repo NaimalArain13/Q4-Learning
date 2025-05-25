@@ -1,1 +1,16 @@
+# Ignore environment variables
 .env
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+
+# Ignore VSCode settings (optional)
+.vscode/
+
+# Ignore virtual environments (optional)
+venv/
+env/
+
+# Ignore system files
+.DS_Store
