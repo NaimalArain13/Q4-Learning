@@ -62,3 +62,6 @@ An introduction to OpenAI’s Agent SDK, which allows developers to build AI age
 
 ### **Task 08: What LLM Is?**
 A beginner-friendly explanation of Large Language Models (LLMs)—what they are, how they work, their real-world applications, and how they power tools like ChatGPT.
+
+### **Task 09: What is Function/Tool calling?**
+A deep research on function/tool calling —what they are, how they work, their real-world applications, and how they power agents.
