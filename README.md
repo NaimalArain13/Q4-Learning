@@ -66,7 +66,7 @@ A beginner-friendly explanation of Large Language Models (LLMs)—what they are,
 A deep research on function/tool calling —what they are, how they work, their real-world applications, and how they power agents.
 
 
-### **Task 09: Goal: I want to get the current Market Rate of Crypto Currencies.**
+### **Task 10: Goal: I want to get the current Market Rate of Crypto Currencies.**
 Breaking the problem into bullet Points:
 
 1. Install Required Libraries
