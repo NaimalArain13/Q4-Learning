@@ -49,7 +49,6 @@ PUT /tasks/{task_id} – update status only, validating allowed values.
 GET /users/{user_id}/tasks – list all tasks for a user.
 
 
-
 💡Hint
 
 Store data in two global dicts:
@@ -65,3 +64,13 @@ A beginner-friendly explanation of Large Language Models (LLMs)—what they are,
 
 ### **Task 09: What is Function/Tool calling?**
 A deep research on function/tool calling —what they are, how they work, their real-world applications, and how they power agents.
+
+
+### **Task 09: Goal: I want to get the current Market Rate of Crypto Currencies.**
+Breaking the problem into bullet Points:
+
+1. Install Required Libraries
+2. Create an agent named CryptoDataAgent.
+3. Binance API: Utilize requests to fetch ticker information (tool calling)
+4. Define the Agent’s Workflow (Implement Runner.run)
+5. Execute the Agent
