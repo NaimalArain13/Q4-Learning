@@ -1,6 +1,6 @@
 ## Tasks Overview
 
-##Leader Group Assignments
+## Leader Group Assignments
 ### **Task 01: Research on Generative AI**
 An overview of generative AI, including how it works, key concepts (like deep learning, transformers, and diffusion models), and its applications in text, image, and audio generation.
 
@@ -116,7 +116,7 @@ Exercise: Make a Triage/Parent agent that gives takes a poetry as an input and T
 
 
 
-##Class Assignments:
+## Class Assignments:
 ### **Task 1: Translator Agent.**
 Create a simple translator agent. 
  
