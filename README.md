@@ -71,6 +71,48 @@ Breaking the problem into bullet Points:
 
 1. Install Required Libraries
 2. Create an agent named CryptoDataAgent.
-3. Binance API: Utilize requests to fetch ticker information (tool calling)
+3. Binance API/CoinLore: Utilize requests to fetch ticker information (tool calling)
+Useful Links:
+(CoinLore API)[https://www.coinlore.com/cryptocurrency-data-api?utm_source=chatgpt.com]
+(Binance API)[https://api.binance.com/api/v3/ticker/price]
 4. Define the Agent’s Workflow (Implement Runner.run)
 5. Execute the Agent
+
+
+### **Task 11: Inner_Working_Function_Tools**
+More about Function tooling
+Your Task Important for everyone to perform
+1. Study the prompts above and extract information from the prompt considering yourself as LLM. Also you guys need to do function implementation and run the code.
+
+2. Explore doc strings.
+
+3. Find the Function_tool response from the result variable after running the code.
+Prompt Exercise:
+1. What's the weather going to be like in Dubai tomorrow afternoon?
+
+2. Find me some good Chinese restaurants near downtown that are open right now
+
+3. Send an email to Sarah about the project deadline being moved to next Wednesday
+
+4. Schedule a meeting with the marketing team for this Friday at 2 PM about the new campaign
+
+5. I want to buy a wireless Bluetooth headphones under $100 with good reviews
+
+### **Task 12: Hands-on on Hands-off**
+Types of Poetry
+- Lyric poetry is when poets write about their own feelings and thoughts, like songs or poems about being sad or happy.
+
+- Narrative poetry tells a story with characters and events, just like a regular story but written in poem form with rhymes or special rhythm.
+
+- Dramatic poetry is meant to be performed out loud, where someone acts like a character and speaks their thoughts and feelings to an audience (acting in a theatre).
+
+1. Make a poet agent. Alternatively you could pass a poetry (2 stanza) as an input.
+2. Make three analyst agent. 
+3. Make a triage/Orchestrator/Parent agent.
+
+Exercise: Make a Triage/Parent agent that gives takes a poetry as an input and Triage/Poetry agent analyze the poetry and handoffs to the appropriate agent. The appropriate analyze agent should give description (tashree) of the poetry.
+
+### **Task 13: Shopping Agent.**
+Use any product data API and fetch the data in function tool then register that tool in your agent and ask relevant question and see how the agent response your query. 
+
+
