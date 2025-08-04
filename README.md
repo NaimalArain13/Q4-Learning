@@ -135,3 +135,29 @@ Useful Links:
 
 ### **Task 3: Shopping Agent.**
 Use any product data API and fetch the data in function tool then register that tool in your agent and ask relevant question and see how the agent response your query. 
+
+
+### **Task 4: Hands-on on Hands-off**
+Types of Poetry
+- Lyric poetry is when poets write about their own feelings and thoughts, like songs or poems about being sad or happy.
+
+- Narrative poetry tells a story with characters and events, just like a regular story but written in poem form with rhymes or special rhythm.
+
+- Dramatic poetry is meant to be performed out loud, where someone acts like a character and speaks their thoughts and feelings to an audience (acting in a theatre).
+
+1. Make a poet agent. Alternatively you could pass a poetry (2 stanza) as an input.
+2. Make three analyst agent. 
+3. Make a triage/Orchestrator/Parent agent.
+
+Exercise: Make a Triage/Parent agent that gives takes a poetry as an input and Triage/Poetry agent analyze the poetry and handoffs to the appropriate agent. The appropriate analyze agent should give description (tashree) of the poetry.
+
+
+### **Task 4: Input Guardrails**
+
+Exercise # 1 Objective: Make a agent and make an input guardrail trigger. Prompt: I want to change my class timings 😭😭 Outcome: After running the above prompt an InputGuardRailTripwireTriggered in except should be called. See the outcome in LOGS
+
+Exercise # 2 Objective: Make a father agent and father guardrail. The father stopping his child to run below 26C.
+
+Exercise # 3 Objective: Make a gate keeper agent and gate keeper guardrail. The gate keeper stopping students of other school.
+
+Exercise: Make a Triage/Parent agent that gives takes a poetry as an input and Triage/Poetry agent analyze the poetry and handoffs to the appropriate agent. The appropriate analyze agent should give description (tashree) of the poetry.
