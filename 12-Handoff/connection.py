@@ -12,11 +12,18 @@ external_provider=AsyncOpenAI(
 )
 model=OpenAIChatCompletionsModel(
     openai_client=external_provider,
+<<<<<<< HEAD
     model="gemini-2.0-flash",
 )
 config = RunConfig(
     model=model, model_provider=external_provider,
     # tracing_disabled=True
+=======
+    model="gemini-1.5-flash",
+)
+config = RunConfig(
+    model=model, model_provider=external_provider, tracing_disabled=True
+>>>>>>> 9c1249350c61a3a14e595f87883430970111cec6
 )
 
 

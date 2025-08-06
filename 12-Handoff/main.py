@@ -1,4 +1,5 @@
 import asyncio
+<<<<<<< HEAD
 from hand_off import lyric_agent, narrative_agent, daramatic_agent
 from agents import Agent, Runner, enable_verbose_stdout_logging, set_tracing_disabled
 from connection import config
@@ -18,6 +19,23 @@ class OutputFormat(BaseModel):
     agent_name: str
     response: str
 
+=======
+from dataclasses import dataclass
+from hand_off import lyric_agent, narrative_agent, daramatic_agent
+from agents import Agent,Runner, enable_verbose_stdout_logging,set_tracing_disabled
+from connection import config
+from rich import print
+enable_verbose_stdout_logging()
+set_tracing_disabled(True)
+
+@dataclass
+class OutputFormat:
+    userInput: str
+    style:str
+    agent_name:str
+    response:str
+    
+>>>>>>> 9c1249350c61a3a14e595f87883430970111cec6
 
 async def main():
     poetry_agent = Agent(
@@ -37,6 +55,7 @@ The earth trembles beneath the storm's wild cry,
 As shadows dance in flickering candlelight.""",
         run_config=config,
     )
+<<<<<<< HEAD
     # Get the final output (this returns an OutputFormat instance)
     final_output = runner.final_output
     print(final_output)
@@ -48,5 +67,19 @@ As shadows dance in flickering candlelight.""",
     # print(f"🤖 Agent Name: {final_output.agent_name}")
     # print(f"💬 Response: {final_output.response}")
 
+=======
+      # Get the final output (this returns an OutputFormat instance)
+    final_output = runner.final_output
+    # print(final_output)
+    
+    # Print the structured output
+    print("=== Final Output✨ ===")
+    print(f"👤 User Input: {final_output.userInput}")
+    print(f"😎 Style: {final_output.style}")
+    print(f"🤖 Agent Name: {final_output.agent_name}")
+    print(f"💬 Response: {final_output.response}")
+
+    
+>>>>>>> 9c1249350c61a3a14e595f87883430970111cec6
 
 asyncio.run(main())
