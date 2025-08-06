@@ -1,10 +1,6 @@
-from agents import Agent, Runner, input_guardrails, GuardrailsFunctionOutput,RunContextWrapper
-from connection import config
 
-
-
-
-
+from dotenv import load_dotenv
+load_dotenv()
 
 def main():
     print("Hello from guardrails!")

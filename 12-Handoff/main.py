@@ -1,19 +1,23 @@
 import asyncio
-from dataclasses import dataclass
 from hand_off import lyric_agent, narrative_agent, daramatic_agent
-from agents import Agent,Runner, enable_verbose_stdout_logging,set_tracing_disabled
+from agents import Agent, Runner, enable_verbose_stdout_logging, set_tracing_disabled
 from connection import config
+from pydantic import BaseModel
 from rich import print
-enable_verbose_stdout_logging()
-set_tracing_disabled(True)
+from dotenv import load_dotenv
 
-@dataclass
-class OutputFormat:
+load_dotenv()
+
+# enable_verbose_stdout_logging()
+# set_tracing_disabled(True)
+
+
+class OutputFormat(BaseModel):
     userInput: str
-    style:str
-    agent_name:str
-    response:str
-    
+    style: str
+    agent_name: str
+    response: str
+
 
 async def main():
     poetry_agent = Agent(
@@ -33,17 +37,16 @@ The earth trembles beneath the storm's wild cry,
 As shadows dance in flickering candlelight.""",
         run_config=config,
     )
-      # Get the final output (this returns an OutputFormat instance)
+    # Get the final output (this returns an OutputFormat instance)
     final_output = runner.final_output
-    # print(final_output)
-    
-    # Print the structured output
-    print("=== Final Output✨ ===")
-    print(f"👤 User Input: {final_output.userInput}")
-    print(f"😎 Style: {final_output.style}")
-    print(f"🤖 Agent Name: {final_output.agent_name}")
-    print(f"💬 Response: {final_output.response}")
+    print(final_output)
 
-    
+    # Print the structured output
+    # print("=== Final Output✨ ===")
+    # print(f"👤 User Input: {final_output.userInput}")
+    # print(f"😎 Style: {final_output.style}")
+    # print(f"🤖 Agent Name: {final_output.agent_name}")
+    # print(f"💬 Response: {final_output.response}")
+
 
 asyncio.run(main())
